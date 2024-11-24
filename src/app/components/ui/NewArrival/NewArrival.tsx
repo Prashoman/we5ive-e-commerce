@@ -56,9 +56,9 @@ const NewArrival = () => {
   return (
     <>
       <div className="bg-[#F5F3FF]">
-        <div className="px-[80px] py-8">
-          <div className="flex items-center justify-between ">
-            <SectionTitle title="NEW ARRIVAL" subTitle="New Collection" />
+        <div className="px-4 lg:px-[80px] py-8">
+          <div className="flex items-center justify-between py-3">
+            <SectionTitle title="FEATURED PRODUCT" subTitle="New Arrivals" />
             <div className="flex items-center gap-4">
               <Image
                 className="w-[24px] h-[24px] cursor-pointer"
@@ -82,11 +82,28 @@ const NewArrival = () => {
             <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             loop={true}
-              slidesPerView={4}
-              spaceBetween={30}
+              slidesPerView={1}
+              spaceBetween={10}
               freeMode={true}
               modules={[FreeMode, Pagination]}
               className="mySwiper"
+              breakpoints={{
+                // When the viewport is 640px or larger
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // When the viewport is 768px or larger
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // When the viewport is 1024px or larger
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
             >
               {NewArrivalData?.map((item, index: number) => (
                 <SwiperSlide key={index}>
@@ -99,6 +116,10 @@ const NewArrival = () => {
               ))}
             </Swiper>
           </div>
+
+          <div className="flex items-center justify-center py-5">
+            <button className="bg-[#7E53D4] text-white text-[16px] py-2 px-4 rounded-lg">See More</button>
+        </div>
         </div>
       </div>
     </>

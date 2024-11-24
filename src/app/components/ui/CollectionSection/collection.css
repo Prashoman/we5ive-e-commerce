@@ -1,0 +1,16 @@
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 9px;
+    background-color: #d3c8f7; /* Light color for inactive bullets */
+    border-radius: 20px; /* Circular shape for inactive bullets */
+    opacity: 1;
+    margin: 0 6px;
+    transition: width 0.3s, background-color 0.3s;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 30px; /* Longer width for the active bullet */
+    height: 9px;
+    background-color: #7b5dc0; /* Darker color for the active bullet */
+    border-radius: 20px; /* Rounded rectangle shape for active bullet */
+  }
