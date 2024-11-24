@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-shadow-custom {
+    /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.945), 2px 2px 5px rgba(0, 0, 0, 0.4); */
+    text-shadow: 0 0 2px black, 2px 2px 5px black;
+  }
+}
