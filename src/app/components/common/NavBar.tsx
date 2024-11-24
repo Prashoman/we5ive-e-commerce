@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="bg-[#F5F3FF] px-[80px] py-[18px] top-0 left-0 sticky shadow-lg">
+      <div className="bg-[#F5F3FF] px-[80px] py-[18px] z-40 top-0 left-0 sticky shadow-lg">
         <div className="flex items-center justify-between">
           <div>
             <Image
