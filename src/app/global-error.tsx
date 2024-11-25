@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function GlobalError({ error, reset }:any) {
   useEffect(() => {
     console.error(error)
