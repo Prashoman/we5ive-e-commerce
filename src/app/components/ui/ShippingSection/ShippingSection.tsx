@@ -6,22 +6,15 @@ import PaymentSvg from "../../common/Svg/PaymentSvg";
 
 const ShippingSection = () => {
   return (
-    <div className="bg-[#6441C2E5] w-full h-[78px] py-3 px-[80px] flex items-center justify-between">
-      {/* <div
-      className="w-[100%]   bg-no-repeat bg-cover bg-center"
-    //   style={{
-    //     backgroundImage: `url(${shippingImage.src})`, // Set background image here
-    //   }}
-      >
-
-      </div> */}
+    <div className="bg-[#6441C2E5] w-full py-auto lg:h-[78px] py-3 px-4 lg:px-[80px] inline-block lg:flex items-center justify-between space-y-3 lg:space-y-0">
+      
       <div>
         <div className="flex  gap-4">
           <span>
             <TruckSvg />
           </span>
           <div>
-            <p className="text-[19px] font-semibold text-white">
+            <p className="text-[16px] lg:text-[19px] font-semibold text-white">
               FREE SHIPPING
             </p>
             <p className="text-[13px] leading-4 text-white">
@@ -36,7 +29,7 @@ const ShippingSection = () => {
            <ExchangeSvg/>
           </span>
           <div>
-            <p className="text-[19px] font-semibold text-white">
+            <p className="text-[16px] lg:text-[19px] font-semibold text-white">
             7 DAYS EXCHANGE
             </p>
             <p className="text-[13px] leading-4 text-white">
@@ -51,7 +44,7 @@ const ShippingSection = () => {
             <PaymentSvg/>
           </span>
           <div>
-            <p className="text-[19px] font-semibold text-white">
+            <p className="text-[16px] lg:text-[19px] font-semibold text-white">
             100% PAYMENT SECURE
             </p>
             <p className="text-[13px] leading-4 text-white">

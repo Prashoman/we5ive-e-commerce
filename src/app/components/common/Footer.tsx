@@ -16,27 +16,27 @@ const Footer = () => {
   return (
     <>
       <div>
-        <div className="bg-black py-12 px-[80px]">
-          <div className="flex justify-between">
-            <div className="w-[30%]">
+        <div className="bg-black py-5 lg:py-12 px-4 lg:px-[80px]">
+          <div className="inline-block lg:flex justify-between">
+            <div className="w-full lg:w-[30%]">
               <Image
-                className="w-[197px] h-[49px]"
+                className="w-[97px] h-[24px] lg:w-[197px] lg:h-[49px]"
                 src={Logo}
                 alt="logo"
                 width={197}
                 height={49}
               />
-              <p className="text-[16px] leading-5 text-[#F4F8FF] mt-3">
+              <p className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF] mt-3">
                 Saepe quo suscipit vitae quia. Repudiandae nobis quis.
                 Laboriosam unde quae qui quasi mollitia tenetur. Dicta explicabo
                 est consectetur maxime quos fugit velit assumenda est.{" "}
               </p>
             </div>
-            <div className="w-[45%]">
-              <h1 className="text-[23px] leading-[29px] font-bold text-[#F4F8FF]">
+            <div className="w-full lg:w-[45%]">
+              <h1 className="text-[19px] lg:text-[23px] leading-[29px] font-bold text-[#F4F8FF]">
                 Sign Up For Our Newsletter!
               </h1>
-              <p className="text-[16px] leading-5 text-[#F4F8FF] mt-2">
+              <p className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF] mt-2">
                 Get notified about updates and be the first to get early access
                 to new Podcast episodes.
               </p>
@@ -52,8 +52,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 flex justify-between">
-            <div className="space-y-2">
+          <div className="mt-5 lg:mt-10 inline-block lg:flex justify-between">
+            <div className="space-y-2 mt-2">
               <Link
                 href={"/"}
                 className="text-[16px] leading-5 text-[#F4F8FF] block cursor-pointer"
@@ -67,38 +67,38 @@ const Footer = () => {
                 Contact us
               </Link>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 mt-2">
               <Link
                 href={"/about-us"}
-                className="text-[16px] leading-5 text-[#F4F8FF] block cursor-pointer"
+                className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF] block cursor-pointer"
               >
                About Us
               </Link>
               <Link
                 href={"/"}
-                className="text-[16px] leading-5 text-[#F4F8FF]  cursor-pointer block"
+                className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF]  cursor-pointer block"
               >
                 Contact Us
               </Link>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 mt-2">
               <Link
                 href={"/"}
-                className="text-[16px] leading-5 text-[#F4F8FF] block cursor-pointer"
+                className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF] block cursor-pointer"
               >
                 Privacy policy
               </Link>
               <Link
                 href={"/"}
-                className="text-[16px] leading-5 text-[#F4F8FF]  cursor-pointer block"
+                className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF]  cursor-pointer block"
               >
                 Terms & Condition
               </Link>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 mt-2">
               <p
                 
-                className="text-[16px] leading-5 text-[#F4F8FF] block font-bold"
+                className="text-[13px] lg:text-[16px] leading-5 text-[#F4F8FF] block font-bold"
               >
                 Social Link
               </p>

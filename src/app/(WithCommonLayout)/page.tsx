@@ -11,7 +11,7 @@ export default function Home() {
    <>
    <HeroSection/>
    <ShippingSection/>
-   <NewArrival/>
+   <NewArrival title="FEATURED PRODUCT" subTitle="New Arrivals"/>
    <OfferSection/>
    <CollectionSection/>
    <BigDealSection/>

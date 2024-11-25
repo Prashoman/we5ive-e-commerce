@@ -5,7 +5,6 @@ const ProductDetails = () => {
     return (
         <div>
             <ProductDetailsSection/>
-            
         </div>
     );
 };

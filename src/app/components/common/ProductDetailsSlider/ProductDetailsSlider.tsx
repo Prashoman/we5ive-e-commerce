@@ -66,14 +66,15 @@ const ProductDetailsSlider = () => {
         />
       </div>
       <div className="w-full">
-        <div className="w-full">
+        <div className="w-full relative">
           <Image
             src={selectedImage}
             alt="e-commerce"
-            className="h-[500px] w-[520px]"
+            className="h-[380px] lg:h-[500px] w-[520px]"
             width={140}
             height={100}
           />
+          <span className="absolute inline-block bottom-4 right-3 lg:hidden  bg-[#E0DCF8] text-[13px] py-2 px-4 rounded-full">{currentIndex+1}/ {productDetailsInfo?.length}</span>
         </div>
         <div className="relative mt-5 px-7 hidden lg:inline-block">
           <button

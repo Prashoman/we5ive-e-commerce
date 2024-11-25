@@ -16,7 +16,12 @@ import ArrivalCard from "../../common/ArrivalCard";
 import { useRef,  } from "react";
 import type { Swiper as SwiperClass } from 'swiper';
 
-const NewArrival = () => {
+interface TProps{
+  title?: string;
+  subTitle?: string;
+}
+
+const NewArrival = ({title='',subTitle}:TProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const NewArrivalData = [
     {
@@ -58,7 +63,7 @@ const NewArrival = () => {
       <div className="bg-[#F5F3FF]">
         <div className="px-4 lg:px-[80px] py-8">
           <div className="flex items-center justify-between py-3">
-            <SectionTitle title="FEATURED PRODUCT" subTitle="New Arrivals" />
+            <SectionTitle title={title} subTitle={subTitle} />
             <div className="flex items-center gap-4">
               <Image
                 className="w-[24px] h-[24px] cursor-pointer"

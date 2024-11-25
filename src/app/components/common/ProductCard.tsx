@@ -1,4 +1,4 @@
-import { Rating } from "@smastrom/react-rating";
+import { Rating,Star } from "@smastrom/react-rating";
 import Image from "next/image";
 import React from "react";
 
@@ -11,7 +11,7 @@ interface TProps {
 const ProductCard = ({ imageUrl, title, price }: TProps) => {
   return (
     <div className="bg-white p-2 w-full rounded-lg">
-      <div className="bg-[#F6F5FD] h-[250px] w-full relative">
+      <div className="bg-[#F6F5FD] h-[300px] lg:h-[250px] w-full relative">
         <Image
           className="w-full h-full"
           src={imageUrl}
@@ -24,7 +24,11 @@ const ProductCard = ({ imageUrl, title, price }: TProps) => {
         </span>
       </div>
       <div className="py-2 flex items-center">
-        <Rating className="max-w-[100px]"  value={3} readOnly />
+        <Rating itemStyles={{
+                    itemShapes: Star, 
+                    activeFillColor: "#FFCF11", 
+                    inactiveFillColor: "#D3D3D3", 
+                  }} className="max-w-[100px]"  value={3} readOnly />
         <span className="text-[14px]">(50)</span>
       </div>
       <div className="flex justify-between items-center pb-3">
